@@ -4,9 +4,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.clear{
-    clear: both;
-}
+
 html{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -14,9 +12,45 @@ html{
 .text-white{
     color: #fff !important;
 }
-/* #main{
 
-} */
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.col-third{
+    width: calc(100%/3);
+}
+
+.row-half{
+    width: calc(100%/2);
+}
+.col-full{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center !important;
+}
 
 #header{
     height: 46px;
@@ -182,12 +216,6 @@ html{
     /* overflow: hidden; */
 }
 
-#content .member-item{
-    float: left;
-    width: 33.33%;
-    text-align: center;
-}
-
 #content .member-name{
     
     font-size: 15px;
@@ -243,16 +271,10 @@ html{
     /* margin-top: 32px;
     margin-left: -8px;
     margin-right: -8px; */
-    margin: 32px -8px 0;
+    margin-top: 32px;
     padding-bottom: 48px;
 }
 
-.place-item{
-    float: left;
-    width: calc( 100% / 3);
-    /* margin: 0 8px; */
-    padding: 0 8px;
-}
 
 .place-img{
     width: 100%;
@@ -406,4 +428,42 @@ html{
         opacity: 1;
         transform: translateY(0px);
     }
+}
+
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+
+.contact-form{
+    font-size: 15px;
+    float: right;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.contact-form .form-submit-btn{
+    font-size: 15px;
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+}
+.contact-form .form-submit-btn:hover{
+    cursor: pointer;
+    opacity: 0.7;
 }
