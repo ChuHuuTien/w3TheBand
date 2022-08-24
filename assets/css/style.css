@@ -291,6 +291,8 @@ html{
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
+    font-size: 15px;
 }
 
 .place-buy-btn:hover{
@@ -323,6 +325,7 @@ html{
     max-width: calc(100%-32px);
     min-height: 200px;
     position: relative;
+    animation: modalFadeIn ease 0.5s;
 }
 
 .modal-close{
@@ -389,4 +392,18 @@ html{
 
 .modal-footer a{
     color: #2196F2;
+}
+.open{
+    display: flex;
+}
+
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }

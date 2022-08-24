@@ -82,7 +82,7 @@
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy tickets</a>
+                                <button href="#" class="place-buy-btn js-buy-ticket">Buy tickets</button>
                             </div>
                         </div>
 
@@ -92,7 +92,7 @@
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy tickets</a>
+                                <button href="#" class="place-buy-btn js-buy-ticket">Buy tickets</button>
                             </div>
                         </div>
 
@@ -102,7 +102,7 @@
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2016</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy tickets</a>
+                                <button href="#" class="place-buy-btn js-buy-ticket">Buy tickets</button>
                             </div>
                         </div>
 
@@ -118,9 +118,9 @@
             </div>
         </div>
 
-        <div class="modal">
-            <div class="modal-container">
-                <div class="modal-close">
+        <div class="modal js-modal">
+            <div class="modal-container js-modal-container">
+                <div class="modal-close js-modal-close">
                     <i class="ti-close"></i>
                 </div>
 
@@ -130,7 +130,7 @@
                 </div>
                 <div class="modal-body">
                     <label for="ticket-quantity" class="modal-label">
-                        <i class="ti-shopping-cart"></i>
+                        <i class="ti-shopping-cart "></i>
                         Tickets, $15 per person
                     </label>
                     <input id="ticket-quantity" type="text" class="modal-input" placeholder="How many?">
@@ -157,5 +157,6 @@
 
         </div>
     </div>
+    <script type="text/javascript" src="./main.js"></script>
 </body>
 </html>
