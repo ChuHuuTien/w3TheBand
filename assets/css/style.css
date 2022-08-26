@@ -6,6 +6,7 @@
 }
 
 html{
+    scroll-behavior: smooth;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -466,4 +467,33 @@ html{
 .contact-form .form-submit-btn:hover{
     cursor: pointer;
     opacity: 0.7;
+}
+
+.map-section img{
+    width: 100%;
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .socials-list{
+    font-size: 24px;
+    
+}
+
+#footer .socials-list a{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover{
+    color: rgba(0, 0, 0, 0.4);
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a{
+    color: rgba(0, 0, 0, 0.6);
 }
